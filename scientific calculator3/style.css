@@ -1,0 +1,113 @@
+/* step1 */
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* step2 */
+.container {
+    width: 45%;
+    height: 55vh;
+    padding: 20px;
+    border-radius: 15px;
+    background: #101820;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6), -10px -10px 30px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* step3 */
+.display #screen {
+    width: 100%;
+    height: 80px;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: 10px;
+    background: #101820;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 8px 8px 12px rgba(0, 0, 0, 0.4), inset -8px -8px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* step4 */
+.btns {
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btns .row button {
+    width: 90px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-radius: 8px;
+    background: #1f2833;
+    color: #66fcf1;
+    box-shadow: 0 0 15px rgba(102, 252, 241, 0.6), 0 0 30px rgba(102, 252, 241, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btns .row button:hover {
+    background: #45a29e;
+    color: #0b0c10;
+    box-shadow: 0 0 25px rgba(69, 162, 158, 0.8), 0 0 50px rgba(69, 162, 158, 0.6);
+    transform: translateY(-5px);
+}
+
+#eval {
+    background: #f05454;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(240, 84, 84, 0.6), 0 0 30px rgba(240, 84, 84, 0.3);
+}
+
+#eval:hover {
+    background: #ff4747;
+    box-shadow: 0 0 25px rgba(255, 71, 71, 0.8), 0 0 50px rgba(255, 71, 71, 0.6);
+}
+
+#ac {
+    background: #66fcf1;
+    color: #101820;
+}
+
+#ac:hover {
+    background: #45a29e;
+    color: #0b0c10;
+    box-shadow: 0 0 25px rgba(69, 162, 158, 0.8), 0 0 50px rgba(69, 162, 158, 0.6);
+}
+
+#ce {
+    background: #c5c6c7;
+    color: #0b0c10;
+}
+
+#ce:hover {
+    background: #c5c6c7;
+    box-shadow: 0 0 25px rgba(197, 198, 199, 0.8), 0 0 50px rgba(197, 198, 199, 0.6);
+}
+
+/* Button transition */
+.btns .row button:active {
+    transform: translateY(2px);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
